@@ -13,22 +13,14 @@
     transform: translateY(-50%);
     left: 10px;
     font-size: 25px;
+    margin-right: 40px;
 }
 
 .form-control {
-    padding-left: 60px; /* Ajusta este valor según sea necesario */
+    padding-left: 60px;
+    margin-left: 50px; /* Ajusta este valor según sea necesario */
     height: 40px;
-    width: 100%; /* O ajusta un ancho fijo si lo prefieres */
     border: none;
     outline: none;
     font-size: 25px;
-}
-
-fieldset {
-    border-color: #6e5ea9;
-    border-radius: 5px;
-}
-
-legend {
-    color: #6e5ea9;
 }

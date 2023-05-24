@@ -9,3 +9,28 @@ body {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.title-container{
+    color : #00275a;
+    font-size: 30px;
+    text-align: start;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.input-search {
+    width: 60%;
+}
+
+.switch {
+    width: 20%;
+}
+
+.search-container{
+    text-align: justify;
+}
+
+.docentes-container{
+    display: flex;
+    padding: 20px;
+}
