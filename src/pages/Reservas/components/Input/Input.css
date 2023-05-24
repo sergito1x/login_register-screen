@@ -1,0 +1,34 @@
+.form-group {
+    position: relative;
+}
+
+.form-group.has-search {
+    display: flex;
+    align-items: center;
+}
+
+.form-control-feedback {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 25px;
+}
+
+.form-control {
+    padding-left: 60px; /* Ajusta este valor según sea necesario */
+    height: 40px;
+    width: 100%; /* O ajusta un ancho fijo si lo prefieres */
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+
+fieldset {
+    border-color: #6e5ea9;
+    border-radius: 5px;
+}
+
+legend {
+    color: #6e5ea9;
+}
