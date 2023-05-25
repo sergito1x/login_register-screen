@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
-const SwitchButton = () => {
-  const [selectedButton, setSelectedButton] = useState(null);
-
+const SwitchButton = ({ selectedButton, handleChange }) => {
   const handleButtonClick = (buttonId) => {
-    setSelectedButton(buttonId === selectedButton ? null : buttonId);
+    if (selectedButton !== buttonId) {
+      handleChange(buttonId);
+    }
   };
 
   return (
@@ -36,6 +36,5 @@ const SwitchButton = () => {
     </div>
   );
 };
-
 
 export default SwitchButton;

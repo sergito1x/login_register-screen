@@ -3,7 +3,7 @@
 }
 
 .form-group.has-search {
-    display: flex;
+    display: inline-block;
     align-items: center;
 }
 
@@ -19,7 +19,7 @@
 .form-control {
     padding-left: 60px;
     margin-left: 50px; /* Ajusta este valor según sea necesario */
-    height: 40px;
+    height: 20px;
     border: none;
     outline: none;
     font-size: 25px;

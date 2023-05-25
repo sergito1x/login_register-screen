@@ -18,19 +18,16 @@ body {
     margin: 10px;
 }
 
-.input-search {
-    width: 60%;
-}
 
 .switch {
     width: 20%;
 }
 
 .search-container{
-    text-align: justify;
+    display: flex;
 }
 
-.docentes-container{
-    display: flex;
-    padding: 20px;
+.docentes-container {
+    display: inline-block;
+    flex-wrap: wrap;
 }

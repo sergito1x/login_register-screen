@@ -10,7 +10,19 @@ const handleInputSearch = () => {
   // Lógica para manejar la búsqueda del input
 }
 
+
 const ReservaEstudiante = () => {
+  const [selectedButton, setSelectedButton] = useState('porNombre');
+
+  const handleChange = (buttonId) => {
+    setSelectedButton(buttonId);
+    // Realiza cualquier otra lógica que necesites cuando se cambia la selección del botón
+    if(buttonId === 'porNombre'){
+      console.log('por nombre');
+    }
+  };
+
+  const nameFilter = useState(false);
   const [listaDocentes, setListaDocentes] = useState([
     {
         name: 'Pepe',
@@ -26,14 +38,25 @@ const ReservaEstudiante = () => {
         name: 'Sergio',
         university: 'Universidad de Ibagué',
         course: 'Programación Móvil'
-    }
+    },
+    {
+      name: 'Valentina',
+      university: 'Universidad de Lima',
+      course: 'Programación Web'
+    },
+    {
+      name: 'Random',
+      university: 'Universidad de Lima',
+      course: 'Random Course'
+    },
+
   ]);
 
   const MapDocentes = (listaDocentes) => {
     return listaDocentes.map((docente) => {
       return (
-        <div>
-            <DocentesDisponibles docente={docente} className="docentes-container"/>
+        <div className="docentes-container">
+            <DocentesDisponibles docente={docente}/>
         </div>
       );
     });
@@ -44,9 +67,9 @@ const ReservaEstudiante = () => {
       <Title className='title-container' text='Reserva de Cita'/>
       <hr className='divider'/>
       <div className='search-container'>
-        <Input handleChange={handleInputSearch} className="input-search" />
-        <h1></h1>
-        <SwitchButton className="switch" />
+        <Input handleChange={handleInputSearch} className="input-search" allowDateSelection={selectedButton==='porNombre'?false:true}/>
+        <h1>&nbsp;</h1>
+        <SwitchButton className="switch" selectedButton={selectedButton} handleChange={handleChange}/>
       </div>
       <br />
       {MapDocentes(listaDocentes)}
