@@ -9,9 +9,14 @@ import MiPerfil from './pages/MiPerfil/MiPerfil';
 
 function App() {
   const [pantallaValeria, setPantallaValeria] = useState(false);
+  const [pantallaRodrigo, setPantallaRodrigo] = useState(false);
 
   const cambiarPantalla = () => {
     setPantallaValeria(!pantallaValeria);
+  };
+
+  const cambiarPantallaR = () => {
+    setPantallaRodrigo(!pantallaRodrigo);
   };
 
   if (pantallaValeria) {
@@ -20,7 +25,8 @@ function App() {
         <MiPerfil />
       </div>
     );
-  } else {
+  }
+  
     return (
       <div className="App">
         <button onClick={cambiarPantalla}>Cambiar</button>
@@ -33,10 +39,9 @@ function App() {
         <MisCalificaciones />
         <hr />
         <Horarios></Horarios>
-        <button onClick={cambiarPantalla}>Cambiar</button>
+        <button onClick={cambiarPantalla}>Valeria</button>
       </div>
     );
   }
-}
 
 export default App;

@@ -1,0 +1,51 @@
+<!--
+    La pantalla principal del sistema mostrará las próximas citas. Para el perfil del estudiante, 
+    mostrará un enlace para sacar una nueva cita. Para el perfil del Docente, mostrará un enlace 
+    para administrar sus horarios y para ver sus calificaciones.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/estilos.css" type="text/css" rel="stylesheet">
+        <title>Programación web</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- <div id="all"> -->
+            <div id="header1">
+                <span class="item_header1"><button><i class="fa fa-bars"></i></button></span>
+                <span class="item_header1">Atención de Citas</span>
+                <span class="item_header1"><button><i class="fa fa-user-circle-o"></i></button></span>
+            </div>
+            <div id="vertical_navbar">
+                <a href="#">Principal</a>
+                <a href="item_5.html" class="active">Perfil</a>
+                <a href="item_4.html">Citas</a>
+                <a href="#">Horarios</a>
+            </div>
+            <div id="content">
+                <div id="header2">
+                    <span class="item_header2">Mi perfil</span>
+                    <span class="item_header2"><button id="save_button">Guardar</button></span>
+                </div>
+                <hr>
+                <div id="header3">Información personal</div>
+                <div id="personal_info" class="item_content">
+                    <div class="row">
+                        <span"><input class="input_row" placeholder="Nombres" type="text"></span>
+                        <span><input class="input_row" placeholder="Apellidos" type="text"></span>
+                        <span><input class="input_row" placeholder="Tipo de documento" type="text"></span>
+                    </div>
+                    <div class="row">
+                        <span><input class="input_row" placeholder="Rol" type="text"></span>
+                        <span><input class="input_row" placeholder="Numero" type="text"></span>
+                    </div>
+                    <div id="image_select">
+                        <div class="image_div"><img src="images/Default_pfp.svg.png" height="100px" width="100px"></div>
+                        <div class="image_div"><input type="file"></div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </body>
+</html>
