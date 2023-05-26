@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto.eot'); /* IE9 Compat Modes */
+  src: url('roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('roboto.woff') format('woff'), /* Modern Browsers */
+  url('roboto.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('roboto.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  width:99%;
+  /* border: 1px solid black; */
+}
+#vertical_navbar {
+  width: 14%;
+  height: 89%;
+  /* border: 1px solid black; */
+  float: left;
+}
+#vertical_navbar a {
+  background-color: #eeeeee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+#vertical_navbar a:hover {
+  background-color: #ccc;
+}
+#vertical_navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+#content {
+  width: 85%;
+  height: 89%;
+  /* border: 1px solid black; */
+  float:right;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+#header1 {
+  width: 100%;
+  height: 10%;
+  display: table;
+  table-layout: fixed;
+  font-size: 22px;
+  /* border: 1px solid black; */
+}
+.item_header1 {
+  display: table-cell;
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.item_header1:first-child {
+  text-align: left;
+}
+.item_header1:last-child {
+  text-align: right;
+}
+.item_header1 button{
+  font-size: 22px;
+}
+#header2 {
+  width: 100%;
+  height: 10%;
+  display: table;
+  table-layout: fixed;
+  font-size: 22px;
+  /* border: 1px solid black; */
+}
+.item_header2 {
+  display: table-cell;
+}
+.item_header2:last-child {
+  text-align: right;
+}
+.item_header2 button{
+  font-size: 14px;
+}
+#save_button {
+  background-color: #04AA6D;
+  color: #eeeeee;
+  border-radius: 20px;
+  padding: 8px;
+}
+#header3 {
+  height: 10%;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+#personal_info {
+  height: 50%;
+  /* border: 1px solid black; */
+  float: left;
+  width: 100%;
+}
+.row {
+  height: 25%;
+  width: 70%;
+  /* border: 1px solid black; */
+}
+.input_row {
+  height: 80%;
+  border-radius: 8px;
+}
+#image_select {
+  /* border: 1px solid red; */
+  width: 29%;
+  float: right;
+  height: 50%;
+}
+.image_div {
+  text-align: center;
+}
