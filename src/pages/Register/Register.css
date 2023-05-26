@@ -53,7 +53,7 @@
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background-color: #98b4cb;
+  background-color: #5e809c;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -61,6 +61,7 @@
   cursor: pointer;
   margin-top: 20px;
   margin-right: 8%;
+
 }
 
 #submit-button:hover {
