@@ -54,7 +54,7 @@ body {
   background-color: #c3d0d9;
 }
 
-input[type="text"] {
+.inputHorario {
   width: 100px;
 }
 

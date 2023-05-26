@@ -44,13 +44,13 @@ const Horarios = () => {
         <p>Agregue sus horarios de disponibilidad durante la semana</p>
         <form>
           <label htmlFor="dia">Día:</label>
-          <input type="text" id="dia" name="dia" value={dia} onChange={(e) => setDia(e.target.value)} required />
+          <input className="inputHorario" type="text" id="dia" name="dia" value={dia} onChange={(e) => setDia(e.target.value)} required />
 
           <label htmlFor="horaInicio">Hora de Inicio:</label>
-          <input type="text" id="horaInicio" name="horaInicio" value={horaInicio} onChange={(e) => setHoraInicio(e.target.value)} required />
+          <input className="inputHorario" type="text" id="horaInicio" name="horaInicio" value={horaInicio} onChange={(e) => setHoraInicio(e.target.value)} required />
 
           <label htmlFor="horaFin">Hora de Fin:</label>
-          <input type="text" id="horaFin" name="horaFin" value={horaFin} onChange={(e) => setHoraFin(e.target.value)} required />
+          <input className="inputHorario" type="text" id="horaFin" name="horaFin" value={horaFin} onChange={(e) => setHoraFin(e.target.value)} required />
 
           <input type="button" value="Agregar" onClick={crearBloque} />
         </form>
