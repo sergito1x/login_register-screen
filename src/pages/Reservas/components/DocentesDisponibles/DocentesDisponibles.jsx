@@ -1,5 +1,6 @@
 import React from 'react';
 import './DocentesDisponibles.css'
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const DocentesDisponibles = ({docente}) => {
     return (

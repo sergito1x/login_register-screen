@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import './Input.css'
 
 const Input = ({ attribute, handleChange, param, allowDateSelection, children }) => {
   return (

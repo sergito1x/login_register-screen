@@ -1,0 +1,21 @@
+.title-container{
+    color : #00275a;
+    font-size: 30px;
+    text-align: start;
+    font-weight: bold;
+    margin: 10px;
+}
+
+hr{
+    width: 90%;
+}
+
+.calificaciones-container{
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 18rem;
+    margin: 10px;
+}

@@ -1,0 +1,139 @@
+/*BOTON "GUARDAR"*/
+.botonGuardar{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    
+    font-size: 18px;
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.linea{
+    border: 2px solid lightgray;
+}
+
+
+/*FROM-GROUP*/
+table.form-group {
+    width: 100%;
+}
+
+table.form-group td {
+    padding: 20px;
+    
+}
+
+
+.form-group input[type="text"], .form-group input[type="password"] {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+.form-group p{
+    margin-bottom: 5px; /*Espacio entre etiqueta y el cuadro de texto*/
+}
+
+
+/*INFORMACION PERSONAL - ADJUNTAR LA FOTO*/
+#fotoPrevia {
+    max-width: 150px;
+    
+}
+
+.contenedor-imagen{
+    padding: 30px;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+/*TABLA OPCIONES "DATOS USUARIO", "UNIVERSIDAD" y "PRESENTACIÓN"*/
+table.opciones th{
+    height: 30px;
+    width: 200px;
+}
+
+#presentacionID {
+    line-height: 30px;
+}
+
+/*FROM-GROUP2 */
+.form-group2 {
+    display: none; 
+}
+
+#uni, #carrera{
+    width: 450px;
+}
+
+/*CUADRO DE TEXTO DE "AGREGAR CURSO"*/
+#cursoEspecialidad input[type="text"]{
+    width: 550px;
+    
+}
+#cursoEspecialidad td {
+    vertical-align: top;
+}
+#cursoEspecialidad p {
+    margin-top: 0;
+}
+
+
+/*FROM-GROUP2 - PRESENTACION*/
+.form-group2 p{
+    margin-bottom: 5px; /*Espacio entre texto y el cuadro de texto*/
+}
+.form-group2 textarea {
+    width: 100%;
+    height: 60px;
+    resize: none;
+    font-size: 18px;
+    font-family: Arial;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+body{
+    font-family: Arial; 
+}
+
+/*ESTILO BARRA LATERAL*/
+.barra {
+    width: 150px;
+    background-color: lightgray;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .barra p {
+    font-size: 20px;
+  }
+  
+  .barra ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .barra li {
+    margin-bottom: 50px;
+  }
+  
+  .contenidoPagina {
+    margin-left: 160px;
+    
+  }
+
+  .pagina{
+    display: none;
+  }
+  
+  
