@@ -6,6 +6,7 @@ import Register from './pages/Register/Register';
 import ReservaEstudiante from './pages/Reservas/ReservaEstudiante';
 import MisCalificaciones from './pages/MisCalificaciones/MisCalificaciones';
 import Horarios from './pages/Horario/Horarios'
+import MiPerfil from './pages/MiPerfil/MiPerfil';
 
 function App() {
   return (
