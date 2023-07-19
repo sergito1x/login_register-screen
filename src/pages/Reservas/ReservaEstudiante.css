@@ -32,4 +32,5 @@ body {
 .docentes-container {
     display: inline-block;
     flex-wrap: wrap;
+    align-content: center;
 }
