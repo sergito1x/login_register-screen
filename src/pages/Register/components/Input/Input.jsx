@@ -10,7 +10,6 @@ const Input = ({ attribute, handleChange, children }) => {
         name={attribute.name}
         placeholder={attribute.placeholder}
         type={attribute.type}
-        onChange={(e) => handleChange(e.target.name, e.target.value)}
         className="regular-style"
       />
     </div>

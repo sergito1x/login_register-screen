@@ -1,18 +1,17 @@
-
 import './App.css';
 import React from 'react';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
-     
-      <Register />
-
-
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/registro" element={<Register />} />
+      </Routes>
+    </Router>
   );
 }
 
