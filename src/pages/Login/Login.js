@@ -46,6 +46,7 @@ const Login = () => {
             }
             else
             {setMessage(data.message);}
+            
             if (data.message === 'Login exitoso') {
                 await timeout(1000);
                 navigate('/registro');
