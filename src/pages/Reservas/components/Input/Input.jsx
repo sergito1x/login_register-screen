@@ -15,18 +15,20 @@ const Input = ({ attribute, handleChange, param, allowDateSelection, children })
       </span>
       {allowDateSelection ? (
         <input
+          id={attribute.search}
+          name={attribute.search}
           type="date"
           className="form-control"
           placeholder="Seleccionar fecha"
-          name={attribute}
           onChange={(e) => handleChange(e.target.name, e.target.value)}
         />
       ) : (
         <input
+          id={attribute.id}
+          name={attribute.id}
           type="text"
           className="form-control"
           placeholder="Buscar"
-          name={attribute}
           onChange={(e) => handleChange(e.target.name, e.target.value)}
         />
       )}

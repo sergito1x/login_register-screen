@@ -6,6 +6,7 @@ import ReservaEstudiante from './pages/Reservas/ReservaEstudiante';
 import MisCalificaciones from './pages/MisCalificaciones/MisCalificaciones';
 import Horarios from './pages/Horario/Horarios';
 import MiPerfil from './pages/MiPerfil/MiPerfil';
+import Citas from './pages/Citas/App';
 
 function App() {
   const [pantallaValeria, setPantallaValeria] = useState(false);
@@ -29,7 +30,8 @@ function App() {
   
     return (
       <div className="App">
-        <button onClick={cambiarPantalla}>Cambiar</button>
+        <ReservaEstudiante></ReservaEstudiante>
+        {/* <button onClick={cambiarPantalla}>Cambiar</button>
         <Register />
         <hr />
         <Login />
@@ -39,7 +41,7 @@ function App() {
         <MisCalificaciones />
         <hr />
         <Horarios></Horarios>
-        <button onClick={cambiarPantalla}>Valeria</button>
+        <button onClick={cambiarPantalla}>Valeria</button> */}
       </div>
     );
   }

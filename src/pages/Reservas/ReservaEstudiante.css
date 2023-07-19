@@ -25,6 +25,8 @@ body {
 
 .search-container{
     display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .docentes-container {
