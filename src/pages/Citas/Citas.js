@@ -6,14 +6,14 @@ function Citas() {
   const [citasProgramadas, setCitasProgramadas] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3001/mostrar-citas")
+    fetch("https://backend-prograweb-production-fff8.up.railway.app/mostrar-citas")
       .then(response => response.json())
       .then(data => setCitas(data))
       .catch(error => console.log(error));
   }, []);
 
   const handleCancelarCita = (id) => {
-    fetch(`http://localhost:3001/eliminar-cita/${id}`)
+    fetch(`https://backend-prograweb-production-fff8.up.railway.app/eliminar-cita/${id}`)
       .then(response => response.text())
       .then(data => {
         console.log(data);

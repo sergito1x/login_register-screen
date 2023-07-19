@@ -28,7 +28,7 @@ const ReservaEstudiante = () => {
   const handleServer = () => {
     if (selectedButton === 'porNombre') {
       // Realiza la llamada al servidor solo cuando se busca por nombre
-      fetch(`http://127.0.0.1:3001/docentes-disponibles`,
+      fetch(`https://backend-prograweb-production-fff8.up.railway.app/docentes-disponibles`,
         {
           method: 'POST', 
           headers: {"Content-Type": "application/json"},
@@ -43,7 +43,7 @@ const ReservaEstudiante = () => {
 
   const handleServerByDate = (dayOfWeek) => {
     // Realiza la llamada al servidor solo cuando se busca por fecha
-    fetch(`http://127.0.0.1:3001/docentes-disponibles`,
+    fetch(`https://backend-prograweb-production-fff8.up.railway.app/docentes-disponibles`,
       {
         method: 'POST', 
         headers: {"Content-Type": "application/json"},

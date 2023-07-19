@@ -14,7 +14,7 @@ function Horarios() {
   }, []);
 
   function obtenerHorarios() {
-    fetch('http://localhost:3001/listar-horarios')
+    fetch('https://backend-prograweb-production-fff8.up.railway.app/listar-horarios')
       .then(response => response.json())
       .then(data => setHorarios(data))
       .catch(error => console.log(error));
@@ -26,7 +26,7 @@ function Horarios() {
   }
 
   function handleClick() {
-    const URL = `http://localhost:3001/guardar-horario/${dia}/${horaInicio}/${horaFin}/${enlace}`;
+    const URL = `https://backend-prograweb-production-fff8.up.railway.app/guardar-horario/${dia}/${horaInicio}/${horaFin}/${enlace}`;
 
     fetch(URL)
       .then(response => response.text())
@@ -35,7 +35,7 @@ function Horarios() {
   }
 
   function eliminarHorario(horarioId) {
-    const URL = `http://localhost:3001/eliminar-horario/${horarioId}`;
+    const URL = `https://backend-prograweb-production-fff8.up.railway.app/eliminar-horario/${horarioId}`;
 
     fetch(URL)
       .then(response => response.text())
