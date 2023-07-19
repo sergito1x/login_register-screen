@@ -1,0 +1,80 @@
+body {
+  font-family: 'Falling Sky';
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar {
+  background-color: #5c656d;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #9cabb9;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sidebar li {
+  margin: 10px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-top: 100px;
+  background-color: #c3d0d9;
+}
+
+.inputHorario {
+  width: 100px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.block {
+  color: white;
+  margin-top: 20px;
+  border: 1px solid #5c656d;
+  padding: 10px;
+  background-color: #5c656d;
+  width:15%;
+}
+
+.block p {
+  margin: 0;
+}
+
+.block button {
+  margin-top: 10px;
+}
