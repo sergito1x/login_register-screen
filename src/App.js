@@ -7,7 +7,7 @@ import ReservaEstudiante from './pages/Reservas/ReservaEstudiante';
 import MisCalificaciones from './pages/MisCalificaciones/MisCalificaciones';
 import Horarios from './pages/Horario/Horarios';
 import MiPerfil from './pages/MiPerfil/MiPerfil';
-import Citas from './pages/Citas/App';
+import Citas from './pages/Citas/Citas';
 
 const App = () => {
   return (
