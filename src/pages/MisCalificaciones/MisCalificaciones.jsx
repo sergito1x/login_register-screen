@@ -32,7 +32,7 @@ const MisCalificaciones = () => {
       return (
         <div>
             <Title className="title-container" text="Mis Calificaciones" />
-            <hr />
+            <hr className="divide"/>
             {MapCalificaciones(listaCalificaciones)}
         </div>
     )

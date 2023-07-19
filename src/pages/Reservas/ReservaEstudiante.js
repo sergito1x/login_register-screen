@@ -104,7 +104,7 @@ const ReservaEstudiante = () => {
   };
 
   return (
-    <div>
+    <div className="reserva">
       <Title className='title-container' text='Reserva de Cita' />
       <hr className='divider' />
       <div className='search-container'>
