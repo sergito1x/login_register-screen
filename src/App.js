@@ -12,13 +12,13 @@ import TopBar from './pages/TopBar/TopBar'; // Importamos la TopBar aquí
 const App = () => {
   return (
     <Router>
-      <TopBar hideOnPaths={["/", "/registro"]}/> {/* Aquí incluimos la TopBar para que esté presente en todas las páginas */}
+      <TopBar hideOnPaths={["/", "/registro"]}/> {/* Aquí incluimos la TopBar para que esté presente en todas las páginas excepto las mencionadas */}
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/reserva" element={<ReservaEstudiante />} />
         <Route path="/calificaciones" element={<MisCalificaciones />} />
         <Route path="/horarios" element={<Horarios />} />
-        <Route path="/perfil" element={<MiPerfil />} />
+        <Route path="/mi-perfil" element={<div>Nothing yet</div>} />
         <Route path="/citas" element={<Citas />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Register />} />

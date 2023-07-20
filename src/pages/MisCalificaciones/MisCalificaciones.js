@@ -3,20 +3,19 @@ import Title from "../Login/components/Title/Title.jsx";
 import Calificacion from "./components/Calificacion.jsx";
 
 const MisCalificaciones = () => {
-    const [listaCalificaciones, setListaCalificaciones] = useState([
-        {
-          name: 'Andres',
-          date: '23 de abril de 2021',
-          rating: 5,
-          comment: 'El profesor fue fabuloso'
-        },
-        {
-          name: 'Pepe',
-          date: '21 de abril de 2022',
-          rating: 4,
-          comment: 'El profesor fue muy bueno pero no me dedicaba tiempo'
-        },
-      ]);
+    const [listaCalificaciones, setListaCalificaciones] = useState([]);
+      const check = (response) => { 
+        if(!response.ok) throw Error("Error: " + response.statusText) 
+        return response;
+      }
+
+      window.onload = () => {
+        fetch('https://backend-prograweb-production-fff8.up.railway.app/calificaciones')
+          .then(check)
+          .then((response) => response.json())
+          .then((data) => {setListaCalificaciones(data)})
+          .catch((error) => console.log(error));
+      }
     
       const MapCalificaciones = (listaCalificaciones) => {
         return listaCalificaciones.map((object) => {

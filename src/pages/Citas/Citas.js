@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import './Citas.css';
 
 function Citas() {
   const [citas, setCitas] = useState([]);
   const [citasProgramadas, setCitasProgramadas] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("https://backend-prograweb-production-fff8.up.railway.app/mostrar-citas")
@@ -30,6 +32,10 @@ function Citas() {
   const handleVerCitasPasadas = () => {
     setCitasProgramadas(false);
   };
+
+  const handleProgramar = () => {
+    navigate('/reserva');
+  }
 
   return (
     <div className="app">
@@ -70,7 +76,7 @@ function Citas() {
         ) : (
           <button className="toggle-button" onClick={handleVerCitasProgramadas}>Ver Citas Programadas</button>
         )}
-        <button className="programar-button">Programar Cita</button>
+        <button className="programar-button" onClick={handleProgramar}>Programar Cita</button>
       </div>
     </div>
   );

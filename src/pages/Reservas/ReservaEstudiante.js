@@ -83,7 +83,6 @@ const ReservaEstudiante = () => {
         // Convierte la fecha seleccionada en el día de la semana (en español)
         const dayOfWeek = format(selectedDate, 'EEEE', { locale: es });
         // Realiza la llamada al servidor por fecha
-        alert(dayOfWeek)
         handleServerByDate(dayOfWeek);
       } else {
         // Si el valor no es una fecha válida, realiza la búsqueda por nombre

@@ -31,7 +31,17 @@ const TopBar = ({ hideOnPaths }) => {
         <ul className="navbar-nav ml-auto flex-md-row"> {/* Agregamos 'flex-md-row' para distribuir horizontalmente */}
           <li className="nav-item">
             <Link to="/mi-perfil" className="nav-link text-white">
+              <span className="titulo">SUPER SISTEMA</span>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/mi-perfil" className="nav-link text-white">
               <span className="ms-2">Mi Perfil</span>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/horarios" className="nav-link text-white">
+              <span className="ms-2">Horarios</span>
             </Link>
           </li>
           <li className="nav-item">
@@ -42,6 +52,11 @@ const TopBar = ({ hideOnPaths }) => {
           <li className="nav-item">
             <Link to="/calificaciones" className="nav-link text-white">
               <span className="ms-2">Mis Calificaciones</span>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/reserva" className="nav-link text-white">
+              <span className="ms-2">Reserva Cita</span>
             </Link>
           </li>
           <li className="nav-item">

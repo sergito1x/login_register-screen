@@ -49,7 +49,7 @@ const Login = () => {
             
             if (data.message === 'Login exitoso') {
                 await timeout(1000);
-                navigate('/registro');
+                navigate('/mi-perfil');
             }
         } catch (error) {
           console.error(error);
