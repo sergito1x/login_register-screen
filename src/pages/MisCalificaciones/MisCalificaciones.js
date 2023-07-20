@@ -5,18 +5,17 @@ import Calificacion from "./components/Calificacion.jsx";
 const MisCalificaciones = () => {
     const [listaCalificaciones, setListaCalificaciones] = useState([
         {
-            name: 'Andres',
-            date: '23 de abril de 2021',
-            rating: 5,
-            comment: 'El profesor fue fabuloso'
+          name: 'Andres',
+          date: '23 de abril de 2021',
+          rating: 5,
+          comment: 'El profesor fue fabuloso'
         },
         {
-            name: 'Andres',
-            date: '21 de abril de 2022',
-            rating: 4,
-            comment: 'El profesor fue muy bueno pero no me dedicaba tiempo'
+          name: 'Pepe',
+          date: '21 de abril de 2022',
+          rating: 4,
+          comment: 'El profesor fue muy bueno pero no me dedicaba tiempo'
         },
-
       ]);
     
       const MapCalificaciones = (listaCalificaciones) => {
@@ -31,9 +30,13 @@ const MisCalificaciones = () => {
 
       return (
         <div>
+          <div className="calificaciones-container">
             <Title className="title-container" text="Mis Calificaciones" />
-            <hr />
-            {MapCalificaciones(listaCalificaciones)}
+            <hr className="divide" />
+            <div className="row">
+              {MapCalificaciones(listaCalificaciones)}
+            </div>
+          </div>
         </div>
     )
 }

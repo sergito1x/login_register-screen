@@ -5,7 +5,6 @@ import SwitchButton from "./components/SwitchButton/SwitchButton.jsx";
 import DocentesDisponibles from "./components/DocentesDisponibles/DocentesDisponibles.jsx";
 import { format, isValid } from 'date-fns';
 import { es } from "date-fns/locale";
-
 import './ReservaEstudiante.css';
 
 const ReservaEstudiante = () => {
@@ -105,20 +104,22 @@ const ReservaEstudiante = () => {
 
   return (
     <div>
-      <Title className='title-container' text='Reserva de Cita' />
-      <hr className='divider' />
-      <div className='search-container'>
-        <Input
-          attribute={{ id: 'search' }}
-          handleChange={handleInputSearch}
-          value={inputValue}
-          className="input-search"
-          allowDateSelection={selectedButton === 'porNombre' ? false : true} />
-        <h1>&nbsp;</h1>
-        <SwitchButton className="switch" selectedButton={selectedButton} handleChange={handleChange} />
+      <div className="reserva">
+        <Title className='title-container' text='Reserva de Cita' />
+        <hr className='divider' />
+        <div className='search-container'>
+          <Input
+            attribute={{ id: 'search' }}
+            handleChange={handleInputSearch}
+            value={inputValue}
+            className="input-search"
+            allowDateSelection={selectedButton === 'porNombre' ? false : true} />
+          <h1>&nbsp;</h1>
+          <SwitchButton className="switch" selectedButton={selectedButton} handleChange={handleChange} />
+        </div>
+        <br />
+        {MapDocentes()}
       </div>
-      <br />
-      {MapDocentes()}
     </div>
   );
 }
