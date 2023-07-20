@@ -5,25 +5,30 @@
   justify-content: center;
   text-align: center;
   background-color: #c3cfd9;
-  padding: 20px;
+  padding: 80px;
+  
 }
 
 .register-container form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .public-info-container,
 .private-info-container {
   flex-grow: 1;
   max-width: 400px;
-  padding: 20px;
+  padding: 50px;
+  align-self: flex-start;
   margin: 10px;
   border-radius: 4px;
   background-color: #b9c4ce;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+  box-sizing: border;
+  margin-left: auto;
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -34,6 +39,7 @@
   .public-info-container,
   .private-info-container {
     width: calc(50% - 10px);
+    
   }
 
   .public-info-container {
@@ -61,7 +67,7 @@
   transition: background-color 0.3s ease;
   cursor: pointer;
   margin-top: 20px;
-  margin-right: 8%;
+  
 
 }
 
@@ -73,4 +79,48 @@
 label{
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#resultado {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #293845;
+    margin-bottom: 50px;
+    margin-top : 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+/* Estilos para el select personalizado */
+.custom-select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+/* Eliminar el borde predeterminado del select */
+.custom-select:focus {
+  outline: none;
+  border-color: #5e809c;
+}
+
+/* Estilos para las opciones del select */
+.custom-select option {
+  padding: 10px;
+}
+
+/* Estilos para todos los campos de entrada */
+.Input {
+  width: 95%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Ajusta el valor según tu preferencia */
+  background-color: #fff;
+  margin-bottom: 20px; /* Agrega espacio entre los campos */
+  margin-left: 10px;
 }
