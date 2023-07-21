@@ -8,6 +8,7 @@ import MisCalificaciones from './pages/MisCalificaciones/MisCalificaciones';
 import Horarios from './pages/Horarios/Horarios';
 import Citas from './pages/Citas/Citas';
 import TopBar from './pages/TopBar/TopBar'; // Importamos la TopBar aquí
+import MiPerfil from './pages/MiPerfil/MiPerfil';
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="/reserva" element={<ReservaEstudiante />} />
         <Route path="/calificaciones" element={<MisCalificaciones />} />
         <Route path="/horarios" element={<Horarios />} />
-        <Route path="/mi-perfil" element={<div>Nothing yet</div>} />
+        <Route path="/mi-perfil" element={<MiPerfil/>} />
         <Route path="/citas" element={<Citas />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Register />} />
