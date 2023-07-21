@@ -90,9 +90,9 @@ function MiPerfil() {
 
     let url;
     if (rol === 'docente') {
-      url = 'https://trabajofinal-production-d65e.up.railway.app/guardar-actualizar-docente';
+      url = 'https://backend-prograweb-production-fff8.up.railway.app/guardar-actualizar-docente';
     } else if (rol === 'alumno') {
-      url = 'https://trabajofinal-production-d65e.up.railway.app/guardar-actualizar-alumno';
+      url = 'https://backend-prograweb-production-fff8.up.railway.app/guardar-actualizar-alumno';
     }
 
     axios.post(url, data)
