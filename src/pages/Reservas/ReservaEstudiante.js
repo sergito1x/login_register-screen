@@ -5,7 +5,6 @@ import SwitchButton from "./components/SwitchButton/SwitchButton.jsx";
 import DocentesDisponibles from "./components/DocentesDisponibles/DocentesDisponibles.jsx";
 import { format, isValid } from 'date-fns';
 import { es } from "date-fns/locale";
-
 import './ReservaEstudiante.css';
 
 const ReservaEstudiante = () => {
@@ -28,7 +27,7 @@ const ReservaEstudiante = () => {
   const handleServer = () => {
     if (selectedButton === 'porNombre') {
       // Realiza la llamada al servidor solo cuando se busca por nombre
-      fetch(`http://127.0.0.1:3001/docentes-disponibles`,
+      fetch(`https://backend-prograweb-production-fff8.up.railway.app/docentes-disponibles`,
         {
           method: 'POST', 
           headers: {"Content-Type": "application/json"},
@@ -43,7 +42,7 @@ const ReservaEstudiante = () => {
 
   const handleServerByDate = (dayOfWeek) => {
     // Realiza la llamada al servidor solo cuando se busca por fecha
-    fetch(`http://127.0.0.1:3001/docentes-disponibles`,
+    fetch(`https://backend-prograweb-production-fff8.up.railway.app/docentes-disponibles`,
       {
         method: 'POST', 
         headers: {"Content-Type": "application/json"},
@@ -84,7 +83,6 @@ const ReservaEstudiante = () => {
         // Convierte la fecha seleccionada en el día de la semana (en español)
         const dayOfWeek = format(selectedDate, 'EEEE', { locale: es });
         // Realiza la llamada al servidor por fecha
-        alert(dayOfWeek)
         handleServerByDate(dayOfWeek);
       } else {
         // Si el valor no es una fecha válida, realiza la búsqueda por nombre
@@ -105,20 +103,22 @@ const ReservaEstudiante = () => {
 
   return (
     <div>
-      <Title className='title-container' text='Reserva de Cita' />
-      <hr className='divider' />
-      <div className='search-container'>
-        <Input
-          attribute={{ id: 'search' }}
-          handleChange={handleInputSearch}
-          value={inputValue}
-          className="input-search"
-          allowDateSelection={selectedButton === 'porNombre' ? false : true} />
-        <h1>&nbsp;</h1>
-        <SwitchButton className="switch" selectedButton={selectedButton} handleChange={handleChange} />
+      <div className="reserva">
+        <Title className='title-container' text='Reserva de Cita' />
+        <hr className='divider' />
+        <div className='search-container'>
+          <Input
+            attribute={{ id: 'search' }}
+            handleChange={handleInputSearch}
+            value={inputValue}
+            className="input-search"
+            allowDateSelection={selectedButton === 'porNombre' ? false : true} />
+          <h1>&nbsp;</h1>
+          <SwitchButton className="switch" selectedButton={selectedButton} handleChange={handleChange} />
+        </div>
+        <br />
+        {MapDocentes()}
       </div>
-      <br />
-      {MapDocentes()}
     </div>
   );
 }

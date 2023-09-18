@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from "react";
-import './App.css';
+import { Link, useNavigate } from 'react-router-dom';
+import './Citas.css';
 
 function Citas() {
   const [citas, setCitas] = useState([]);
   const [citasProgramadas, setCitasProgramadas] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:3001/mostrar-citas")
+    fetch("https://backend-prograweb-production-fff8.up.railway.app/mostrar-citas")
       .then(response => response.json())
       .then(data => setCitas(data))
       .catch(error => console.log(error));
   }, []);
 
   const handleCancelarCita = (id) => {
-    fetch(`http://localhost:3001/eliminar-cita/${id}`)
+    fetch(`https://backend-prograweb-production-fff8.up.railway.app/eliminar-cita/${id}`)
       .then(response => response.text())
       .then(data => {
         console.log(data);
@@ -30,6 +32,10 @@ function Citas() {
   const handleVerCitasPasadas = () => {
     setCitasProgramadas(false);
   };
+
+  const handleProgramar = () => {
+    navigate('/reserva');
+  }
 
   return (
     <div className="app">
@@ -70,7 +76,7 @@ function Citas() {
         ) : (
           <button className="toggle-button" onClick={handleVerCitasProgramadas}>Ver Citas Programadas</button>
         )}
-        <button className="programar-button">Programar Cita</button>
+        <button className="programar-button" onClick={handleProgramar}>Programar Cita</button>
       </div>
     </div>
   );

@@ -1,0 +1,26 @@
+/* TopBar.css */
+
+.navbar {
+    height: 80px;
+}
+
+/* Agregar un borde a cada ítem de la barra de navegación */
+.nav-item {
+    border: 0.5px solid white;
+    margin: 0px; /* Opcional: añade un pequeño espacio entre los ítems */
+    padding-right: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centrar los ítems horizontalmente */
+    align-items: center; /* Centrar los ítems verticalmente */
+    height: 50px; /* Ajustar la altura de la top bar según sea necesario */
+  }
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}

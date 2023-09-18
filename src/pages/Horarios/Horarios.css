@@ -1,0 +1,88 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #283641;
+}
+
+.form-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.btn {
+  background-color: #0e0d13;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resultado {
+  display: block;
+  margin-top: 10px;
+}
+
+.horarios-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.horarios-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #374b59;
+}
+
+.horarios-table th,
+.horarios-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+.btn-eliminar {
+  background-color: #0e0d13;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body {
+  background-color: #c3d0d9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
