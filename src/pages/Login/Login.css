@@ -9,8 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    border: 5px solid #00275a;
-    background-color: #c3cfd9;
+    background: linear-gradient(to bottom, #c3cfd9, #4c5e6e);
 }
 
 .title-container {
@@ -51,7 +50,7 @@ body {
 }
 
 .label-container {
-    color: darkcyan;
+    color: 293845;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
